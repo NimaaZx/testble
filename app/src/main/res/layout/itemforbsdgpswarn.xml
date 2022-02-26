@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+
+android:layout_margin="10dp"
+    android:id="@+id/CVGPSWARN"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="rtl"
+
+    >
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:id="@+id/ConstraintWarningGps"
+    >
+
+<ImageView
+
+
+    android:id="@+id/IVGPS"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    />
+    <TextView
+        android:id="@+id/TVMessage"
+        android:layout_marginTop="10dp"
+        android:text="need GPS access"
+        app:layout_constraintTop_toBottomOf="@id/IVGPS"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/black"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        />
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:text="Turn it on"
+        android:id="@+id/BTNAccept"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/black"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:textSize="13sp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/TVMessage"
+        app:layout_constraintRight_toRightOf="@id/TVMessage"
+        />
+
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@+id/BtnDeny"-->
+<!--        android:text="لغو"-->
+<!--        android:textColor="@color/black"-->
+<!--        style="@style/myButton"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/BTNAccept"-->
+<!--        app:layout_constraintRight_toRightOf="@id/TVMessage"-->
+<!--        android:visibility="gone"-->
+<!--        />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+

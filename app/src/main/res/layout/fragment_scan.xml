@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+<variable
+    name="scanvm"
+    type="com.example.testble.ScanViewModel" />
+
+    </data>
+
+<FrameLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScanFragment">
+
+
+    <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+        android:id="@+id/BTNScan"
+        android:background="@drawable/backbuttonshape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Scanning"
+        android:textSize="12sp"
+        app:finalCornerAngle="50dp"
+        app:initialCornerAngle="0dp"
+
+        android:layout_gravity="center"
+        app:spinning_bar_color="#FFFFFF"
+        app:spinning_bar_padding="0dp"
+        app:spinning_bar_width="3dp"
+        android:textColor="@color/black"
+        />
+
+</FrameLayout>
+</layout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/suggestFragment"
+
+        android:title="پیشنهادات"
+        />
+
+    <item
+        android:id="@+id/insideFragment"
+
+        android:title="منو دیجیتال" />
+
+    <!--    <item-->
+    <!--        android:id="@+id/order"-->
+    <!--        android:icon="@drawable/outline_shopping_basket_24"-->
+    <!--        android:title="سفارشات فعال" />-->
+
+
+</menu>
